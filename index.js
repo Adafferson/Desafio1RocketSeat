@@ -1,19 +1,29 @@
-// DESAFIO ROCKEATSEAT
-// Crie um programa que armazena dados da empresa Rocketseat dentro de um objeto chamado empresa.
+// DESAFIO
+//Crie um programa com um objeto para armazenar dados de um programador como nome, idade e tecnologias que trabalha.
 
-const Empresa = 
+const Programadores =[
     {
-        Nome:'RockeatSeat',
-        Cor:'Roxo',
-        Foco:'Programação',
-        Endereço:'Rua Guilherme Gembala',
-        Numero: 260
-}
+        nome:'Camilo',
+        idade: 31,
+        tecnologias:'Javascript,Phyton',
+        especialidade:'Web'
+    },
+    {
+        nome:'Gustavo',
+        idade: 28,
+        tecnologia:'Java, C++',
+        especialidade:'Desktop'
+    },
+    {
+        nome:'Paulo',
+        idade: 23,
+        tecnologias:'Ruby, Java',
+        especialidade: 'Mobile'
+    }
+]
+// Imprima em tela o nome e especialidade da primeira tecnologia que o usuário utiliza no seguinte formato:
+// O usuário Carlos tem 32 anos e usa a tecnologia C++ com especialidade em Desktop  
 
 
-    //Imprima em tela utilizando console.log o nome da empresa e seu endereço no seguinte formato
-   //A empresa Rocketseat está localizada em Rua Guilherme Gembala, 260
-
-
-console.log(`A empresa ${Empresa.Nome} está localizada em ${Empresa.Endereço} Numero ${Empresa.Numero} `)
+console.log(`O usuário ${Programadores[0].nome} tem ${Programadores[0].idade} e usa as tecnologias ${Programadores[0].tecnologias.split(',')[0]} com especialidade em ${Programadores[0].especialidade}`)
 
